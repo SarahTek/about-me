@@ -1,10 +1,17 @@
 
-h1{font-size: 4rem;
-  font-style:;
-  
-  
+h1{font-size: 50px;
+  text-decoration:none;
+  color: #fff;
+  padding: 5px 20px;
+
+
+
 }
-li{
+h2{
+  font-size: 25px;
+}
+
+  li{
   display: inline-block;
   margin-top: 20px;
   margin-right: 20px;
@@ -13,6 +20,48 @@ li{
 }
 ul{
   list-style: disc;
-  margin: 1rem;
+  margin: 0rem;
   padding: 1rem;
+}
+header{
+  background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?size=626&ext=jpg);
+  background-size: cover;
+  background-position: center;
+  
+
+}
+ul li a{
+  text-decoration:none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid #fff;
+
+}
+ul li a:hover{
+  background-color: #fff;
+  color:black;
+}
+img  {
+  background-size: cover;
+  background-position: center;
+}
+#hero{
+  width: 100%;
+}
+#par{
+  position: absolute;
+  top: 300px;
+ width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color:saddlebrown;
+
+}
+#edu{
+  postion: absolute;
+  
+}
+#hal{
+  font-size: 20px;
 }

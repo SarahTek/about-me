@@ -21,7 +21,7 @@ alert('You need to answer with \'yes\' or \'no\' ');
 
 let age = prompt('how old are you?');
 console.log(typeof age);
-if (parseInt(age) >== 18) {
+if (parseInt(age) >= 18) {
   //console.log('You are good to go');
   alert('You are good to go.');
  } 
