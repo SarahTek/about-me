@@ -4,7 +4,7 @@ console.log('Hello');
 
 let username= prompt('what is your name?').toLowerCase();
 alert('Hello ' + username + ', Welcome to my page!');
-
+let score = 0;
 //Question 2:
 
 let doesAnyoneLikeChoclate = prompt('Do you like Choclate?');
@@ -12,10 +12,13 @@ let doesAnyoneLikeChoclate = prompt('Do you like Choclate?');
 if (doesAnyoneLikeChoclate.toLowerCase() === 'yes' || doesAnyoneLikeChoclate.toLowerCase() === 'y') {
  //console.log('Me too.');
  alert('Me too');
+ score++;
+ 
 } 
 else if(doesAnyoneLikeChoclate.toLowerCase() === 'no'|| doesAnyoneLikeChoclate.toLowerCase() === 'n') {
   //console.log('Yes, you do, you\'re in denial');
   alert('Yes, you do, you\'re in denial.');
+
 }
 else {
 //console.log('You need to answer with \'yes\' or \'no\' ');
@@ -30,6 +33,8 @@ console.log(typeof age);
 if (parseInt(age) >= 18) {
   //console.log('You are good to go');
   alert('You are good to go.');
+  score++;
+  
  } 
  else if(parseInt(age) < 18) {
    //console.log('You are not old enough.');
@@ -46,6 +51,8 @@ let user = prompt('Do you like Mac computer?');
 if (user.toLowerCase() === 'yes' || user.toLowerCase()==='y'){
  // console.log('Me too.');
   alert('Me too');
+  score++;
+  
 }
 else if (user.toLowerCase() === 'no' || user.toLowerCase()==='n'){
   // console.log('Yes, you do, you\'re in denial.');
@@ -58,6 +65,7 @@ let temprature= prompt('What is the temprature now?');
 if (temprature <= 45){
   //console.log('it is cold outside, Wear a Jacket')
   alert('It is cold outside, You should wear a Jacket.')
+  score++;
 }
 else if (temprature > 45){
   //console.log('it is a great weather outside, wear light weight cloth.')
@@ -76,16 +84,18 @@ else{
 
 let userAttempts = 4;
 for (let i = 0; i < userAttempts; i++) {
-  let number = prompt('Guess a  my favourite number from 1-8.');
+  let number = prompt('Guess my favourite number from 1-8.');
   let favNumber = 5;
   console.log(typeof (number));
   if (number == favNumber) {
-    console.log('You are correct.');
+    alert('You are correct.');
+    score++;
+    
     break;
   } else if (number > favNumber) {
-    console.log('the numberis too high');
+    alert('the numberis too high');
   } else if (number < favNumber) {
-    console.log('the number is too low');
+    alert('the number is too low');
   }
 }
 
@@ -96,10 +106,10 @@ for (let i = 0; i < userAttempts; i++) {
 
 
 
-// //Question 7
-  let correctAnswer; {
+//Question 7
+  let attemptsRemaining = 6; 
   let favFruit = ['kiwi', 'pineapple', 'orange', 'grape', 'watermelon'];
-
+ 
 
   for (let i = 0; i < 6; i++) {
       let userAnsw = prompt('Can you guess my favorite fruit?');
@@ -113,12 +123,82 @@ for (let i = 0; i < userAttempts; i++) {
               break;
           }
       }
-      if (i !==6){
-          alert(' try again');
+      if (i !== 6){
+     // console.log(`you have ${i - 1} attempts remaining.`);
+        alert(`you have ${attemptsRemaining - i - 1} attempts remaining.`);
+        //
+        //attemptsRemaining--;
+       score++;
+        
       }
   }
-  }
 
-  correctAnswer();
+  alert('Great job'  + ' ' + username);
+  alert('Nice Job, you got ' + score + ' out of 7');
 
-alert('My favorite fruits are: apple, strawberry, orange, grape and watermelon');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   correctAnswer();
+
+// // alert('My favorite fruits are: apple, strawberry, orange, grape and watermelon');
+// let favFruit = ['orange','pineapple','grapes','watermelon','banana','strawberry','kiwi'];
+
+// let attempsremaining = 7;
+//  for (let i = 0; i < favFruit.length; i++); {
+//    let fruit = prompt('can you guess my favourite fruits?');{
+//       if(fruit === favFruit[i]){
+//        //console.log('You are correct.');
+//        alert('You are correct.');
+//        score++;
+//        break;
+//      }
+//      else if (fruit !== favFruits){
+//        //console.log('please try again.');
+//        alert(`you have ${attemptsRemaining - 1} attempts remaining,try again`);
+//        attemptsRemaining--;
+//      }
+//    }
+//  }
+ 
+
+// alert('your final score is '+ score + 'out of 7. please try again later.');
