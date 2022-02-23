@@ -70,8 +70,8 @@ favoriteMac();
 
 //Question 4
 
-function tempatureScale(){
-  let temprature= prompt('What is the temprature now?');
+function temperatureScale(){
+  let temprature= prompt('What is the temperature now?');
   if (temprature <= 45){
   //console.log('it is cold outside, Wear a Jacket')
     alert('It is cold outside, You should wear a Jacket.');
@@ -85,7 +85,7 @@ function tempatureScale(){
     alert('answer in numbers only');
   }
 }
-tempatureScale();
+temperatureScale();
 
 
 
