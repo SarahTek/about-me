@@ -1,12 +1,13 @@
 'use strict';
 console.log('Hello');
-//Question 1:
+
 
 let username= prompt('what is your name?').toLowerCase();
 alert('Hello ' + username + ', Welcome to my page!');
 let score = 0;
-//Question 2:
+//Question 1:
 
+function favoriteChocolate(){
 let doesAnyoneLikeChoclate = prompt('Do you like Choclate?');
 
 if (doesAnyoneLikeChoclate.toLowerCase() === 'yes' || doesAnyoneLikeChoclate.toLowerCase() === 'y') {
@@ -24,7 +25,8 @@ else {
 //console.log('You need to answer with \'yes\' or \'no\' ');
 alert('You need to answer with \'yes\' or \'no\' ');
 }
-
+}
+favoriteChocolate();
 
 // //Question 3:
 
