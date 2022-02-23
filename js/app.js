@@ -5,6 +5,7 @@ console.log('Hello');
 let username= prompt('what is your name?').toLowerCase();
 alert('Hello ' + username + ', Welcome to my page!');
 let score = 0;
+
 //Question 1:
 
 function favoriteChocolate(){
@@ -67,21 +68,24 @@ function favoriteMac(){
 }
 favoriteMac();
 
-//Question 5
+//Question 4
 
-let temprature= prompt('What is the temprature now?');
-if (temprature <= 45){
+function tempatureScale(){
+  let temprature= prompt('What is the temprature now?');
+  if (temprature <= 45){
   //console.log('it is cold outside, Wear a Jacket')
-  alert('It is cold outside, You should wear a Jacket.')
-  score++;
-}
-else if (temprature > 45){
+    alert('It is cold outside, You should wear a Jacket.');
+    score++;
+  }
+  else if (temprature > 45){
   //console.log('it is a great weather outside, wear light weight cloth.')
-  alert('The weather is great today, wear light weight cloth.');
+    alert('The weather is great today, wear light weight cloth.');
+  }
+  else{
+    alert('answer in numbers only');
+  }
 }
-else{
-  alert('answer in numbers only')
-}
+tempatureScale();
 
 
 
