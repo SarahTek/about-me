@@ -120,34 +120,38 @@ favoriteNumber();
 
 
 //Question 6
+
+function favoriteFruits(){
   let attemptsRemaining = 6; 
   let favFruit = ['kiwi', 'pineapple', 'orange', 'grape', 'watermelon'];
- 
+
 
   for (let i = 0; i < 6; i++) {
-      let userAnsw = prompt('Can you guess my favorite fruit?');
-      let guess = userAnsw.toLowerCase();
+    let userAnsw = prompt('Can you guess my favorite fruit?');
+    let guess = userAnsw.toLowerCase();
 
-      for (let j = 0; j < favFruit.length; j++){
-          if (guess === favFruit[j]) {
-              alert('You are correct!');
-              score++;
-              i = 6;
-              break;
-          }
+    for (let j = 0; j < favFruit.length; j++){
+      if (guess === favFruit[j]) {
+        alert('You are correct!');
+        score++;
+        i = 6;
+        break;
       }
-      if (i !== 6){
-     // console.log(`you have ${i - 1} attempts remaining.`);
-        alert(`you have ${attemptsRemaining - i - 1} attempts remaining.`);
-        //
-        //attemptsRemaining--;
-       score++;
-        
-      }
+    }
+    if (i !== 6){
+    // console.log(`you have ${i - 1} attempts remaining.`);
+      alert(`you have ${attemptsRemaining - i - 1} attempts remaining.`);
+      //
+      //attemptsRemaining--;
+      score++;
+
+    }
   }
+}
+favoriteFruits();
 
-  alert('Great job'  + ' ' + username);
-  alert('Nice Job, you got ' + score + ' out of 7');
+alert('Great job'  + ' ' + username);
+alert('Nice Job, you got ' + score + ' out of 7');
 
 
 
