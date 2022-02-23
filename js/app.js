@@ -92,24 +92,26 @@ tempatureScale();
 
 
 
-//Question 6:
+//Question 5:
 
-let userAttempts = 4;
-for (let i = 0; i < userAttempts; i++) {
-  let number = prompt('Guess my favourite number from 1-8.');
-  let favNumber = 5;
-  console.log(typeof (number));
-  if (number == favNumber) {
-    alert('You are correct.');
-    score++;
-    
-    break;
-  } else if (number > favNumber) {
-    alert('the numberis too high');
-  } else if (number < favNumber) {
-    alert('the number is too low');
+function favoriteNumber(){
+  let userAttempts = 4;
+  for (let i = 0; i < userAttempts; i++) {
+    let number = prompt('Guess my favourite number from 1-8.');
+    let favNumber = 5;
+    console.log(typeof (number));
+    if (number == favNumber) {
+      alert('You are correct.');
+      score++;
+      break;
+    } else if (number > favNumber) {
+      alert('the numberis too high');
+    } else if (number < favNumber) {
+      alert('the number is too low');
+    }
   }
 }
+favoriteNumber();
 
 
 
@@ -117,8 +119,7 @@ for (let i = 0; i < userAttempts; i++) {
 
 
 
-
-//Question 7
+//Question 6
   let attemptsRemaining = 6; 
   let favFruit = ['kiwi', 'pineapple', 'orange', 'grape', 'watermelon'];
  
