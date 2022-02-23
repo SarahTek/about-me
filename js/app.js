@@ -8,46 +8,49 @@ let score = 0;
 //Question 1:
 
 function favoriteChocolate(){
-let doesAnyoneLikeChoclate = prompt('Do you like Choclate?');
+  let doesAnyoneLikeChoclate = prompt('Do you like Choclate?');
 
-if (doesAnyoneLikeChoclate.toLowerCase() === 'yes' || doesAnyoneLikeChoclate.toLowerCase() === 'y') {
- //console.log('Me too.');
- alert('Me too');
- score++;
- 
-} 
-else if(doesAnyoneLikeChoclate.toLowerCase() === 'no'|| doesAnyoneLikeChoclate.toLowerCase() === 'n') {
+  if (doesAnyoneLikeChoclate.toLowerCase() === 'yes' || doesAnyoneLikeChoclate.toLowerCase() === 'y') {
+    //console.log('Me too.');
+    alert('Me too');
+    score++;
+
+  }
+  else if(doesAnyoneLikeChoclate.toLowerCase() === 'no'|| doesAnyoneLikeChoclate.toLowerCase() === 'n') {
   //console.log('Yes, you do, you\'re in denial');
-  alert('Yes, you do, you\'re in denial.');
+    alert('Yes, you do, you\'re in denial.');
 
-}
-else {
-//console.log('You need to answer with \'yes\' or \'no\' ');
-alert('You need to answer with \'yes\' or \'no\' ');
-}
+  }
+  else {
+    //console.log('You need to answer with \'yes\' or \'no\' ');
+    alert('You need to answer with \'yes\' or \'no\' ');
+  }
 }
 favoriteChocolate();
 
-// //Question 3:
+// //Question 2:
 
-let age = prompt('How old are you?');
-console.log(typeof age);
-if (parseInt(age) >= 18) {
+function ageQuestion(){
+  let age = prompt('How old are you?');
+  console.log(typeof age);
+  if (parseInt(age) >= 18) {
   //console.log('You are good to go');
-  alert('You are good to go.');
-  score++;
-  
- } 
- else if(parseInt(age) < 18) {
-   //console.log('You are not old enough.');
-   alert('You are not old enough.');
- }
- else {
- //console.log('you need to answer with numbers only.');
- alert('You need to answer with numbers only.');
- }
+    alert('You are good to go.');
+    score++;
 
-//Question 4
+  }
+  else if(parseInt(age) < 18) {
+    //console.log('You are not old enough.');
+    alert('You are not old enough.');
+  }
+  else {
+  //console.log('you need to answer with numbers only.');
+    alert('You need to answer with numbers only.');
+  }
+}
+ageQuestion();
+
+//Question 3
 
 let user = prompt('Do you like Mac computer?');
 if (user.toLowerCase() === 'yes' || user.toLowerCase()==='y'){
