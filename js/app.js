@@ -52,17 +52,20 @@ ageQuestion();
 
 //Question 3
 
-let user = prompt('Do you like Mac computer?');
-if (user.toLowerCase() === 'yes' || user.toLowerCase()==='y'){
- // console.log('Me too.');
-  alert('Me too');
-  score++;
-  
-}
-else if (user.toLowerCase() === 'no' || user.toLowerCase()==='n'){
+function favoriteMac(){
+  let user = prompt('Do you like Mac computer?');
+  if (user.toLowerCase() === 'yes' || user.toLowerCase()==='y'){
+  // console.log('Me too.');
+    alert('Me too');
+    score++;
+
+  }
+  else if (user.toLowerCase() === 'no' || user.toLowerCase()==='n'){
   // console.log('Yes, you do, you\'re in denial.');
-  alert('Yes, you do, you\'re in denial.');
+    alert('Yes, you do, you\'re in denial.');
+  }
 }
+favoriteMac();
 
 //Question 5
 
