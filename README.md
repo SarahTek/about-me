@@ -1,17 +1,21 @@
-# about-me
+# LAB - 02
 
-LAB - Number
+## About Me and guessing game questions
 
-Project Name
+ - I build **About Me** webpage with a guessing game Questions.
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+## Author: Sarah Teklemariam/Martha Quintanilla-Ramirez,
+* Driver: Martha,
+* Navigator: Sarah
+* We Worked on wrapping every questions in a function.
 
-Author: Sarah Teklemariam/Martha Quintanilla-Ramirez, Driver: Martha, Navigator: Sarah, Worked on wrapping questions in a function.
+
+## Links and Resources
+* [MDN](https://developer.mozilla.org/en-US/docs/Learn)
+* **HTML and CSS** by Jon buckett
+* **Javascript and Jquery** by Jon buckett
 
 
-Links and Resources
-submission PR
-Any Links you used as reference
-Reflections and Comments
-Consider including the answers to your daily journal and submission questions here
-This is also a good place to reflect on the tools and resources used and learned
+## Reflections and Comments
+
+I learned alot creating my own webpage for the first time, googling questions that i didn't understand and also referring to those resources was very helpful. 
