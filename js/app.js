@@ -132,7 +132,6 @@ function favoriteFoods(){
 
   let favFoods = ['lasagna','injera','parm chicken','pizza','spagetti'];
   let attemptsRemaining7 = 6; 
-  let correctAnswer7 = 0;
   while (attemptsRemaining7) {
     for (let j = 0; j < favFoods.length; j++){
       let userAnswer7 = prompt('can you guess my favourite foods?');
