@@ -12,7 +12,7 @@ function sevenQuestion(){
   temperatureScale();
   favoriteNumber();
   favoriteFruits();
-  //favoriteFoods();
+  favoriteFoods();
 }
 sevenQuestion();
 //Question 1:
@@ -125,28 +125,32 @@ function favoriteFruits(){
     }
   }
 }
+//alert('Great job'  + ' ' + username + ' ' + 'You got ' + score + ' out of 7');
 
-//Question 7.
-
+// //Question 7.
 function favoriteFoods(){
 
   let favFoods = ['lasagna','injera','parm chicken','pizza','spagetti'];
   let attemptsRemaining7 = 6; 
-  while (attemptsRemaining7) {
-    for (let j = 0; j < favFoods.length; j++){
-      let userAnswer7 = prompt('can you guess my favourite foods?');
-      if (userAnswer7 === favFoods[0] || userAnswer7 === favFoods[1] || userAnswer7 === favFoods[2] || userAnswer7 === favFoods[3] || userAnswer7 === favFoods[4]);
+  let correctAnswers = false;
+  
+    for (let j = 0; j < 6; j++){
+      let userAnswer7 = prompt('can you guess my favourite foods?').toLowerCase();
+      for (let j = 0; j < favFoods.length; j++){
+      if (userAnswer7 === favFoods[j]){
       alert('That is correct.');
+      correctAnswers = true;
       score++;
       break;
-    } if (userAnswer7 !== favFoods[j]){
-      alert(`That is not correct.You have ${attemptsRemaining7 - 1} attempts remaining!`);
-    }
-    attemptsRemaining7--;
-    if (attemptsRemaining7 === 0) {
+      }
+    }  if (correctAnswers === false){
+      alert(`That is not correct.You have ${attemptsRemaining7 -j -1} attempts remaining!`);
+      
+   
+    }else if (attemptsRemaining7 = 0) {
       alert('opps you run out of attempts, try again later');
+      break;
     }
   }
 }
-alert('Great job'  + ' ' + username);
-alert('You got ' + score + ' out of 7');
+  alert('Great job'  + ' ' + username + ' ' + 'You got ' + score + ' out of 7');
