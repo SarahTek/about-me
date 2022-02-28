@@ -12,7 +12,7 @@ function sevenQuestion(){
   temperatureScale();
   favoriteNumber();
   favoriteFruits();
-  favoriteFoods();
+  //favoriteFoods();
 }
 sevenQuestion();
 //Question 1:
@@ -69,7 +69,6 @@ function favoriteMac(){
 function temperatureScale(){
   let temprature= prompt('What is the temperature now?');
   if (temprature <= 45){
-  //console.log('it is cold outside, Wear a Jacket')
     alert('It is cold outside, You should wear a Jacket.');
     score++;
   }
@@ -139,8 +138,7 @@ function favoriteFoods(){
       let userAnswer7 = prompt('can you guess my favourite foods?');
       if (userAnswer7 === favFoods[0] || userAnswer7 === favFoods[1] || userAnswer7 === favFoods[2] || userAnswer7 === favFoods[3] || userAnswer7 === favFoods[4]);
       alert('That is correct.');
-      correctAnswer7++;
-      j = 6;
+      score++;
       break;
     } if (userAnswer7 !== favFoods[j]){
       alert(`That is not correct.You have ${attemptsRemaining7 - 1} attempts remaining!`);
@@ -148,9 +146,8 @@ function favoriteFoods(){
     attemptsRemaining7--;
     if (attemptsRemaining7 === 0) {
       alert('opps you run out of attempts, try again later');
-      break;
     }
   }
 }
 alert('Great job'  + ' ' + username);
-alert('Nice Job, you got ' + score + ' out of 7');
+alert('You got ' + score + ' out of 7');
