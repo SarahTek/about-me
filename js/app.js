@@ -32,7 +32,7 @@ function favoriteChocolate(){
 }
 
 
-// //Question 2:
+//Question 2:
 
 function ageQuestion(){
   let age = prompt('How old are you?');
@@ -125,7 +125,7 @@ function favoriteFruits(){
     }
   }
 }
-//alert('Great job'  + ' ' + username + ' ' + 'You got ' + score + ' out of 7');
+
 
 // //Question 7.
 function favoriteFoods(){
@@ -145,11 +145,9 @@ function favoriteFoods(){
       }
     }  if (correctAnswers === false){
       alert(`That is not correct.You have ${attemptsRemaining7 -j -1} attempts remaining!`);
-      
-   
-    }else if (attemptsRemaining7 = 0) {
+      }else if (attemptsRemaining7 = 0) {
       alert('opps you run out of attempts, try again later');
-      break;
+     break;
     }
   }
 }
