@@ -1,5 +1,5 @@
 'use strict';
-console.log('Hello');
+alert('Hello');
 
 
 let username= prompt('what is your name?').toLowerCase();
@@ -36,7 +36,6 @@ function favoriteChocolate(){
 
 function ageQuestion(){
   let age = prompt('How old are you?');
-  console.log(typeof age);
   if (parseInt(age) >= 18) {
     alert('You are good to go.');
     score++;
@@ -84,12 +83,11 @@ function temperatureScale(){
 //Question 5:
 
 function favoriteNumber(){
-  let userAttempts = 4;
+  let userAttempts = 3;
+  let favNumber = 5;
   for (let i = 0; i < userAttempts; i++) {
     let number = prompt('Guess my favourite number from 1-8.');
-    let favNumber = 5;
-    console.log(typeof (number));
-    if (number == favNumber) {
+    if (number === favNumber) {
       alert('You are correct.');
       score++;
       break;
@@ -104,10 +102,8 @@ function favoriteNumber(){
 //Question 6
 
 function favoriteFruits(){
-  let attemptsRemaining = 6; 
+  let attemptsRemaining = 6;
   let favFruit = ['kiwi', 'pineapple', 'orange', 'grapes', 'watermelon'];
-
-
   for (let i = 0; i < 6; i++) {
     let userAnsw = prompt('Can you guess my favorite fruit?');
     let guess = userAnsw.toLowerCase();
@@ -131,24 +127,23 @@ function favoriteFruits(){
 function favoriteFoods(){
 
   let favFoods = ['lasagna','injera','parm chicken','pizza','spagetti'];
-  let attemptsRemaining7 = 6; 
+  let attemptsRemaining7 = 3;
   let correctAnswers = false;
-  
-    for (let j = 0; j < 6; j++){
-      let userAnswer7 = prompt('can you guess my favourite foods?').toLowerCase();
-      for (let j = 0; j < favFoods.length; j++){
+
+  for (let j = 0; j < 5; j++){
+    let userAnswer7 = prompt('can you guess my favourite foods?').toLowerCase();
+    for (let j = 0; j < favFoods.length; j++){
       if (userAnswer7 === favFoods[j]){
-      alert('That is correct.');
-      correctAnswers = true;
-      score++;
-      break;
+        alert('That is correct.');
+        correctAnswers = true;
+        score++;
+        break;
       }
-    }  if (correctAnswers === false){
-      alert(`That is not correct.You have ${attemptsRemaining7 -j -1} attempts remaining!`);
-      }else if (attemptsRemaining7 = 0) {
+    } if (correctAnswers === false){
+      alert(`That is not correct.You have ${attemptsRemaining7 -1} attempts remaining!`);
+    }else if (attemptsRemaining7 === 0) {
       alert('opps you run out of attempts, try again later');
-     break;
     }
   }
 }
-  alert('Great job'  + ' ' + username + ' ' + 'You got ' + score + ' out of 7');
+alert('Great job' + ' ' + username + ' ' + 'You got ' + score + ' out of 7');
